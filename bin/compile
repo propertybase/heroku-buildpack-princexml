@@ -1,9 +1,9 @@
 #!/bin/bash
 
-PRINCE_VERSION="10r6"
+PRINCE_VERSION="10r7"
 echo "-----> Installing PrinceXML $PRINCE_VERSION"
 [ -d .downloads ] || mkdir .downloads
-(cd .downloads; [ -d "prince-$PRINCE_VERSION-linux-amd64-static" ] ||
+(cd .downloads; [ -d "prince-$PRINCE_VERSION-linux-generic-x86_64" ] ||
   curl -s http://www.princexml.com/download/prince-$PRINCE_VERSION-linux-generic-x86_64.tar.gz | tar xzf -)
 
 if [ -f $3/PRINCE_LICENSE ]; then
